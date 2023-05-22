@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Chatbot</title>
+
+  <!-- fontawesome css file  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- bootstrap css file  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+  <!-- chatbot css file  -->
+  <link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+
+  <!-- About chatbot and its features  -->
+  <div class="container">
+    <center class="my-3"><b>
+        <h1>ChatBot (Made for SciAstra.com)</h1>
+      </b></center>
+    <center><span>Made by: Yuvraj Singh</span></center>
+    <h2 class="my-10">About Chatbot:</h2>
+    <ul>
+      <li>This chatbot is made using pure HTML, CSS and Js</li>
+      <li>It is linked with SciAstra webpages</li>
+      <li>It can respond to various commands</li>
+      <li>The color scheme used in this chatbot has been inspired by the SciAstra website design.</li>
+      <li>This is not responsive yet</li>
+      <li>The current version of the chatbot includes only basic queries, but it can be upgraded further</li>
+    </ul>
+    <h2>Some Queries it can answer:</h2>
+    <ul>
+      <li>Hello</li>
+      <li>How are you?</li>
+      <li>Who are you?</li>
+      <li>What is your name</li>
+      <li>Navigate me to the blog page</li>
+      <li>Navigate me to contact page</li>
+      <li>What is the date today</li>
+      <li>How to contact you</li>
+      <li>What is your contact number</li>
+      <li>What is your email id</li>
+      <li>Where is your office located</li>
+    </ul>
+  </div>
+
+
+  <!-- chatbot code  -->
+  <div class="chatbot-wrapper">
+    <i class="fa-solid fa-comment chatbot-toggle"></i>
+    <div class="chatbot-container">
+      <div class="container-closing chatbot-input-container" onclick="closeChatbot()">&darr;</div>
+      <div class="chatbot-messages"></div>
+      <div class="chatbot-input-container">
+        <input type="text" class="chatbot-input" placeholder="Type your message here...">
+        <button class="chatbot-submit">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- chatbot js file  -->
+  <script src="/script.js"></script>
+
+</body>
+
+</html>
